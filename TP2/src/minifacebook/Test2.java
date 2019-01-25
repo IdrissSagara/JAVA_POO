@@ -3,7 +3,7 @@ package minifacebook;
 public class Test2 {
 
 	public static void main(String[] args) {
-		DateNaissance naissanceHarry = new DateNaissance(23, 7, 1989);
+		   DateNaissance naissanceHarry = new DateNaissance(23, 7, 1989);
 	       DateNaissance naissanceRon = new DateNaissance(24, 8, 1988);
 	       DateNaissance naissanceHermone = new DateNaissance(13, 4, 1990);
 	      

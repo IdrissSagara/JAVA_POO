@@ -37,18 +37,25 @@ public class Personne {
 
 
 	public void ecritInfos(){
-
+		
+		int age = dateDeNaissance.age();
         String nomPrenom = "" + prenom + " " + nom;
-        String nomMeilleurAmi = "" + meilleurAmi.prenom + " " + meilleurAmi.nom;
-        String nomCompletAmi = "" + ami.prenom + " " + ami.nom;
+        if(meilleurAmi != null) {
+            String nomMeilleurAmi = "" + meilleurAmi.prenom + " " + meilleurAmi.nom;
+    		System.out.println("Meilleur ami : "+ nomMeilleurAmi);	
+        }
+        if(ami != null) {
+            String nomCompletAmi = "" + ami.prenom + " " + ami.nom;
+    		System.out.println("Ami : "+ nomCompletAmi);
+        }
+        
 		System.out.println("---------------------------");
 		System.out.println(nomPrenom);
 		System.out.print("Né le : ");
 		dateDeNaissance.ecritDate();
-		System.out.println();
-		System.out.println("Meilleur ami : "+ nomMeilleurAmi);
-		System.out.println("Ami : "+ nomCompletAmi);
+		System.out.print(" ("+age+" ans)\n");
 		System.out.println("---------------------------");
+        
 	}
 	
 	
