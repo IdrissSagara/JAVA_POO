@@ -16,15 +16,24 @@ public class Test {
 	       //System.out.println("l'âge de Jack est: " + naissanceJack.age());
 	       //System.out.println();
 	       
-	       patty.setAmi(jack);
-	       patty.setMeilleurAmi(jack);
+	       //patty.setAmi(jack);
+	       //patty.setMeilleurAmi(jack);
 	        
-	       jack.setAmi(patty);
-	       jack.setMeilleurAmi(patty);
+	       //jack.setAmi(patty);
+	       //jack.setMeilleurAmi(patty);
 	       
 	     
-	       patty.ecritInfos();
+	       //patty.ecritInfos();
 	       jack.ecritInfos();
+	       int tab [];
+	       tab = new int[4];
+	       for (int i = 0; i < tab.length; i++) {
+	    	   
+			tab[i]= i;
+	    	   System.out.println("tab ["+ i + "]:"+ i);
+			
+	       }
+	       
 	    }
 
 }
